@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Aymoon</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark p-4 navbar-expand-lg bg-dark">
+    <div class="container">
+      <a class="navbar-brand align-items-center d-flex " href="#">
+        <img class="img-fluid  me-2" src="images/logo.png" alt="logo">
+        <div class="text">
+          <h1 class="fs-6">Weather</h1>
+          <p class="sm mb-0 text-white-50">tagline goes here</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-1">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- start landing -->
+  <div class="landing p-3 z-2">
+    <div class="container">
+      <form class="position-relative">
+        <input type="text" placeholder="Find your location..."
+          class="form-control bg-dark border-0 shadow-none text-white form-control-sm rounded-5 p-3 my-4" id="search">
+        <button class="btn btn-info text-white px-5 position-absolute rounded-5 sup">Find</button>
+      </form>
+      <div class="row mt-5 pt-4" id="wh">
+
+      </div>
+    </div>
+  </div>
+  <footer class="p-5 ">
+    <div class="container ">
+      <div class="row ">
+        <div class="col-md-8">
+          <form action="" class="  ">
+            <input type="text" placeholder="Enter your email to subscribe..."
+              class="form-control bg-dark border-0 shadow-none text-white form-control-sm rounded-5 p-3 mb-3"
+              id="search">
+            <button class="btn btn-info text-white px-4 position-absolute rounded-5 sup">Subscribe</button>
+          </form>
+          <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved . </p>
+        </div>
+        <div class="col-md-3">
+          <div class="social-links d-flex align-items-center justify-content-center gap-3">
+            <a class="links rounded-circle" href="#"><i class="fa fa-brands fa-2x  fa-facebook"></i></a>
+            <a class="links rounded-circle" href="#"><i class="fa fa-brands fa-2x  fa-twitter"></i></a>
+            <a class="links rounded-circle" href="#"><i class="fa fa-brands fa-2x  fa-google-plus"></i></a>
+            <a class="links rounded-circle" href="#"><i class="fa fa-brands fa-2x  fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

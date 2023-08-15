@@ -7,7 +7,11 @@ var city = '';
 
 var ww;
 
-
+async function bycity() {
+  var res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=cdc3c4bf75114845b6094447230308&q=${city}&days=3`)
+  res = await res.json()
+  return res
+}
 async function get_show() {
   var res = await fetch(`https://ipinfo.io/json?token=bb6dd1d8cc9be7`)
   res = await res.json()
@@ -146,8 +150,8 @@ async function get_show() {
     `;
     document.getElementById("wh").innerHTML = cartona
   }
+  city = res.city
   console.log(city);
-  await bycity()
   ww = await bycity()
   cartona = `
     <div class="col-md-4 p-0 ">
@@ -214,11 +218,7 @@ async function get_show() {
   console.log((await bycity()));
 
 }
-async function bycity() {
-  var res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=cdc3c4bf75114845b6094447230308&q=${city}&days=3`)
-  res = await res.json()
-  return res
-}
+
 // const sucss = (pos) => {
 //     position_lat = pos.coords.latitude
 //     position_lon = pos.coords.longitude

@@ -8,7 +8,7 @@ var city = '';
 var ww;
 
 async function bycity() {
-  var res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=cdc3c4bf75114845b6094447230308&q=${city}&days=3`)
+  var res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=cdc3c4bf75114845b6094447230308&q=${city}&days=3`)
   res = await res.json()
   return res
 }
